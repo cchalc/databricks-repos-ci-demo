@@ -10,6 +10,6 @@ df = df.withColumn("NewCol", lit(0)).filter(col("model").isNotNull())
 # Load
 df.write.format("delta").mode("overwrite").saveAsTable("planes")
 
-# Verify
+# Verify test
 resDf = spark.sql("SELECT * FROM planes")
 resDf.show()
