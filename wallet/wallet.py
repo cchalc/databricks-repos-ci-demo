@@ -1,7 +1,7 @@
 class InsufficientAmount(Exception):
     pass
 
-# comment another test
+# comment another test isjf
 class Wallet(object):
 
     def __init__(self, initial_amount=0):
